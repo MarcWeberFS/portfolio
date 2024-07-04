@@ -17,7 +17,7 @@ const ParticleCanvas = () => {
     const particleOptions = {
       color: '#EBEBEB',
       count: 60,
-      direction: { x: 1, y: 1 },
+      direction: { x: 1, y: 0.75 },
       size: { min: 1, max: 2 },
       duration: { min: 10000, max: 15000 },
       interval: { min: 100, max: 500 },
@@ -31,7 +31,6 @@ const ParticleCanvas = () => {
 
     window.addEventListener('resize', resizeCanvas);
 
-    // Clean up on unmount
     return () => {
       particleSystem.stop();
       window.removeEventListener('resize', resizeCanvas);

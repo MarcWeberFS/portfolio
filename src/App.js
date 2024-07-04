@@ -1,19 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 import ParticleCanvas from './component/ParticleCanvas';
+import Spotlight from './component/Spotlight';
+import './App.css';
 
 function App() {
   return (
-
     <div className="App">
-      <header className="App-header">
+      <Spotlight />
+      <header className="App-header bg-slate-950 text-white">
 
-        <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+          <div className="relative w-full h-screen">
+          <ParticleCanvas />
+        </div>
+        <div className="relative w-full h-screen transform scale-x-[-1]">
           <ParticleCanvas />
         </div>
 
-      </header>
 
+      </header>
     </div>
   );
 }
