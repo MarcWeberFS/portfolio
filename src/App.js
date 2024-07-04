@@ -11,7 +11,7 @@ function App() {
     Role: "Co-Founder at Cardea Insurance GmbH",
     Description: "Designed and deployed a customer-facing web application. Integrated AWS services to streamline processes. Led strategic recruitment and team building.",
     Skills: ['AWS', 'Webflow', 'JavaScript','Leadership'],
-    Link: "https://www.cardea-insurance.com"
+    Link: "https://www.cardea.webflow.io/"
   };
   
   const card2 = {
