@@ -3,6 +3,7 @@ import ParticleCanvas from './component/ParticleCanvas';
 import Spotlight from './component/Spotlight';
 import './App.css';
 import Card from './component/Card';
+
 function App() {
 
   const card1 = {
@@ -28,56 +29,64 @@ function App() {
     Skills: ['Spring Boot', 'Docker', 'React', 'CI/CD', 'Prometheus'],
     Link: "https://www.swisscard.ch/en"
   };
-  
-
 
   return (
-    <div className="App font-sans">
-      <header className="App-header bg-slate-950 text-white">
-        <div className="background-container">
+    <div className="App font-sans h-screen">
+      <header className="App-header bg-slate-950 text-white h-full">
+        <div className="background-container absolute inset-0 z-0">
           <ParticleCanvas />
           <div className="inverted-canvas">
             <ParticleCanvas />
           </div>
         </div>
         <Spotlight />
-        <div className="content flex max-w-5xl mr-auto ml-auto text-left">
-          <div className="w-4/5">
+        <div className="w-full h-full overflow-y-auto">
+        <div className="content flex max-w-5xl mx-auto text-left relative z-10 h-full">
+          <div className="w-4/5 sticky top-0">
             <span className="text-5xl font-bold">Marc Weber</span>
             <br></br>
             <span className="text-2xl">Full Stack Software Engineer</span>
-
           </div>
           <div className="w-full">
-            About
-            <br></br>
-            Education
-            <br></br>
-            work experience
-            <br></br>
-          <Card 
-            Date={card1.Date} 
-            Role={card1.Role} 
-            Description={card1.Description} 
-            Skills={card1.Skills} 
-          />
-          <Card 
-            Date={card2.Date} 
-            Role={card2.Role} 
-            Description={card2.Description} 
-            Skills={card2.Skills} 
-          />
-          <Card 
-            Date={card3.Date} 
-            Role={card3.Role} 
-            Description={card3.Description} 
-            Skills={card3.Skills} 
-          />            
-            Projects
-            <br></br>
+            <div className="p-4 space-y-4">
+              <div>
+                About
+              </div>
+              <div>
+                Education
+              </div>
+              <div>
+                Work Experience
+              </div>
+              <Card 
+                Date={card1.Date} 
+                Role={card1.Role} 
+                Description={card1.Description} 
+                Skills={card1.Skills} 
+                Link={card1.Link}
+              />
+              <Card 
+                Date={card2.Date} 
+                Role={card2.Role} 
+                Description={card2.Description} 
+                Skills={card2.Skills} 
+                Link={card2.Link}
+              />
+              <Card 
+                Date={card3.Date} 
+                Role={card3.Role} 
+                Description={card3.Description} 
+                Skills={card3.Skills} 
+                Link={card3.Link}
+              />
+              <div>
+                Projects
+              </div>
+            </div>
           </div>
-
         </div>
+        </div>
+        
       </header>
     </div>
   );
