@@ -6,11 +6,29 @@ import Card from './component/Card';
 function App() {
 
   const card1 = {
-    Date: "July 2020 - present",
-    Role: "Full Stack Software Engineer",
-    Description: "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test",
-    Skills: ['JavaScript', 'Spring Boot', 'React']
+    Date: "Mar 2023 - present",
+    Role: "Co-Founder at Cardea Insurance GmbH",
+    Description: "Designed and deployed a customer-facing web application. Integrated AWS services to streamline processes. Led strategic recruitment and team building.",
+    Skills: ['AWS', 'Webflow', 'JavaScript','Leadership'],
+    Link: "https://www.cardea-insurance.com"
   };
+  
+  const card2 = {
+    Date: "Jan 2022 - May 2022",
+    Role: "Telematics Technician Soldier at Rekrutenschule",
+    Description: "Collaborated on military communication objectives. Established and maintained mobile communication networks. Resolved network issues to ensure operations.",
+    Skills: ['Communication Networks', 'Team Collaboration', 'Problem-Solving'],
+    Link: "https://www.miljobs.ch/functions/telematiksoldat"
+  };
+  
+  const card3 = {
+    Date: "Aug 2020 - Dec 2021",
+    Role: "Full-Stack Software Engineer at Swisscard",
+    Description: "Developed and enhanced Octopus UI application. Implemented monitoring systems with Prometheus and Grafana. Contributed to Scrum team for automated solutions.",
+    Skills: ['Spring Boot', 'Docker', 'React', 'CI/CD', 'Prometheus'],
+    Link: "https://www.swisscard.ch/en"
+  };
+  
 
 
   return (
@@ -36,6 +54,18 @@ function App() {
             Role={card1.Role} 
             Description={card1.Description} 
             Skills={card1.Skills} 
+          />
+          <Card 
+            Date={card2.Date} 
+            Role={card2.Role} 
+            Description={card2.Description} 
+            Skills={card2.Skills} 
+          />
+          <Card 
+            Date={card3.Date} 
+            Role={card3.Role} 
+            Description={card3.Description} 
+            Skills={card3.Skills} 
           />
             About
             <br></br>

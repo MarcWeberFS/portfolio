@@ -5,7 +5,7 @@ export default function Card({ Date, Role, Description, Skills, Link }) {
     return (
       <a href={Link} className="block cursor-pointer">
         <div className="flex divide-gray-200 overflow-hidden px-4 py-4 rounded-lg bg-transparent hover:bg-slate-800">
-          <div className="w-48 font-normal text-slate-400 italic ">
+          <div className="w-48 text-sm text-slate-400 italic ">
             {Date}
           </div>
           <div className="w-full">
