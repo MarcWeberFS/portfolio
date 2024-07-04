@@ -8,8 +8,8 @@ function App() {
   const card1 = {
     Date: "July 2020 - present",
     Role: "Full Stack Software Engineer",
-    Description: "Test Test Test",
-    Skills: "Test Test Test"
+    Description: "Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test",
+    Skills: ['JavaScript', 'Spring Boot', 'React']
   };
 
 
