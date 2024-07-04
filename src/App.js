@@ -49,6 +49,12 @@ function App() {
 
           </div>
           <div className="w-full">
+            About
+            <br></br>
+            Education
+            <br></br>
+            work experience
+            <br></br>
           <Card 
             Date={card1.Date} 
             Role={card1.Role} 
@@ -66,11 +72,7 @@ function App() {
             Role={card3.Role} 
             Description={card3.Description} 
             Skills={card3.Skills} 
-          />
-            About
-            <br></br>
-            work experience
-            <br></br>
+          />            
             Projects
             <br></br>
           </div>
