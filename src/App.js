@@ -13,10 +13,10 @@ function App() {
       'Full-Stack Development',
       'Project Management',
       'Microeconomics',
-      'Artificial Intelligence (AI)',
+      'Artificial Intelligence',
       'Data Science',
       'Java',
-      'Python (Programming Language)',
+      'Python',
       'Spring Boot',
       'MongoDB',
       'Svelte',
@@ -35,7 +35,7 @@ function App() {
   
   const card2 = {
     Date: "Jan 2022 - May 2022",
-    Role: "Telematics Technician Soldier at Rekrutenschule",
+    Role: "Telematics Technician Soldier during the Rekrutenschule",
     Description: "Collaborated on military communication objectives. Established and maintained mobile communication networks. Resolved network issues to ensure operations.",
     Skills: ['Communication Networks', 'Team Collaboration', 'Problem-Solving'],
     Link: "https://www.miljobs.ch/functions/telematiksoldat"
@@ -60,59 +60,56 @@ function App() {
         </div>
         <Spotlight />
         <div className="w-full h-full overflow-y-auto">
-        <div className="content flex max-w-7xl mx-auto text-left relative z-10 h-full">
-          <div className="w-4/5 sticky top-0">
-            <span className="text-5xl font-bold">Marc Weber</span>
-            <br></br>
-            <span className="text-2xl">Full Stack Software Engineer</span>
-          </div>
-          <div className="w-full">
-            <div className="p-4 space-y-4">
-              <div>
-                About
-              </div>
-              <div>
-                Education
-              </div>
-              <Card 
-                Date={cardEducation.Date} 
-                Role={cardEducation.Role} 
-                Description={cardEducation.Description} 
-                Skills={cardEducation.Skills} 
-                Link={cardEducation.Link}
-              />
-              <div>
-                Work Experience
-              </div>
-              <Card 
-                Date={card1.Date} 
-                Role={card1.Role} 
-                Description={card1.Description} 
-                Skills={card1.Skills} 
-                Link={card1.Link}
-              />
-              <Card 
-                Date={card2.Date} 
-                Role={card2.Role} 
-                Description={card2.Description} 
-                Skills={card2.Skills} 
-                Link={card2.Link}
-              />
-              <Card 
-                Date={card3.Date} 
-                Role={card3.Role} 
-                Description={card3.Description} 
-                Skills={card3.Skills} 
-                Link={card3.Link}
-              />
-              <div>
-                Projects
+          <div className="content flex max-w-7xl mx-auto text-left relative z-10 h-full">
+            <div className="w-4/5 sticky top-0">
+              <span className="text-5xl font-bold">Marc Weber</span>
+              <br></br>
+              <span className="text-2xl">Full Stack Software Engineer</span>
+            </div>
+            <div className="w-full">
+              <div className="p-4 space-y-4 text-slate-300">
+                <div className="text-3xl text-white font-semibold">About</div>
+                <div className="text-slate-300">
+                  Cardea Insurance represents the culmination of my journey in tech and business, where I leverage my skills in <span className="text-white font-semibold">web application development</span> to revolutionize the insurance industry. With a focus on enhancing user experience and automating processes, my team and I have developed a user-friendly digital signature solution and a premium calculator using robotics technology. These innovations not only streamline customer interactions but also embody our digital-first ethos, ensuring efficiency and accessibility.
+                  <br />
+                  <br />
+                  Currently pursuing a Bachelor of Applied Science in Business Information Technology at ZHAW, I am honing my understanding of <span className="text-white font-semibold">economics and management</span> while applying these principles to drive company growth. My past experience at Swisscard and the Swiss Armed Forces, coupled with my proficiency in <span className="text-white font-semibold">AWS services</span>, positions me to create software solutions that democratize access to financial services, reflecting my commitment to leveraging technology for social empowerment.
+                </div>
+                <div className="text-3xl text-white font-semibold margin-top-50">Education</div>
+                <Card 
+                  Date={cardEducation.Date} 
+                  Role={cardEducation.Role} 
+                  Description={cardEducation.Description} 
+                  Skills={cardEducation.Skills} 
+                  Link={cardEducation.Link}
+                />
+                <div className="text-3xl text-white font-semibold margin-top-50">Work Experience</div>
+                <Card 
+                  Date={card1.Date} 
+                  Role={card1.Role} 
+                  Description={card1.Description} 
+                  Skills={card1.Skills} 
+                  Link={card1.Link}
+                />
+                <Card 
+                  Date={card2.Date} 
+                  Role={card2.Role} 
+                  Description={card2.Description} 
+                  Skills={card2.Skills} 
+                  Link={card2.Link}
+                />
+                <Card 
+                  Date={card3.Date} 
+                  Role={card3.Role} 
+                  Description={card3.Description} 
+                  Skills={card3.Skills} 
+                  Link={card3.Link}
+                />
+                <div className="text-3xl text-white font-semibold margin-top-50">Projects</div>
               </div>
             </div>
           </div>
         </div>
-        </div>
-        
       </header>
     </div>
   );
