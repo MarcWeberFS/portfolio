@@ -5,6 +5,25 @@ import './App.css';
 import Card from './component/Card';
 
 function App() {
+  const cardEducation = {
+    Date: 'Sep 2022 - Jul 2025',
+    Role: 'Bachelor of Applied Science at ZHAW, Business Information Technology',
+    Description: `The Bachelor of Science in Business Information Technology is designed to equip students with a blend of IT skills and business knowledge. The program focuses on current topics and practical examples, ensuring relevance to the digitalization of society. It prepares students for roles at the intersection of people and technology, focusing on designing, implementing, and operating innovative and complex socio-technical systems.`,
+    Skills: [
+      'Full-Stack Development',
+      'Project Management',
+      'Microeconomics',
+      'Artificial Intelligence (AI)',
+      'Data Science',
+      'Java',
+      'Python (Programming Language)',
+      'Spring Boot',
+      'MongoDB',
+      'Svelte',
+      'Microsoft Azure'
+    ],
+    Link: 'https://www.zhaw.ch/en/sml/study/bachelor/business-information-technology-business-information-systems/'
+  };
 
   const card1 = {
     Date: "Mar 2023 - present",
@@ -41,7 +60,7 @@ function App() {
         </div>
         <Spotlight />
         <div className="w-full h-full overflow-y-auto">
-        <div className="content flex max-w-5xl mx-auto text-left relative z-10 h-full">
+        <div className="content flex max-w-7xl mx-auto text-left relative z-10 h-full">
           <div className="w-4/5 sticky top-0">
             <span className="text-5xl font-bold">Marc Weber</span>
             <br></br>
@@ -55,6 +74,13 @@ function App() {
               <div>
                 Education
               </div>
+              <Card 
+                Date={cardEducation.Date} 
+                Role={cardEducation.Role} 
+                Description={cardEducation.Description} 
+                Skills={cardEducation.Skills} 
+                Link={cardEducation.Link}
+              />
               <div>
                 Work Experience
               </div>
