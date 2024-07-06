@@ -1,10 +1,18 @@
 import { motion } from "framer-motion";
+import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
-export default function Download({ Label, Link }) {
+export default function Download({ Label }) {
+  const [isHovered, setIsHovered] = useState(false);
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/CV');
+  };
+
   return (
     <motion.a
-      href={Link}
-      download
+      onClick={handleClick}
       initial={{ "--x": "100%", scale: 1 }}
       animate={{ "--x": "-100%" }}
       whileTap={{ scale: 0.90 }}
