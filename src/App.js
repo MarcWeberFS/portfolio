@@ -53,7 +53,7 @@ function App() {
   };
 
   return (
-    <div className="App font-sans h-screen">
+    <div className="App font-sans h-screen overflow-hidden">
       <header className="App-header bg-slate-950 text-white h-full">
         <div className="background-container absolute inset-0 z-0">
           <ParticleCanvas />
@@ -62,9 +62,9 @@ function App() {
           </div>
         </div>
         <Spotlight />
-        <div className="w-full h-full overflow-y-auto">
-          <div className="content flex max-w-7xl mx-auto text-left relative z-10 h-full">
-            <div className="w-4/5 sticky top-0 flex flex-col justify-between h-full/mt-20">
+        <div className="w-full h-full overflow-y-auto mr-5 pt-5 ml-5">
+          <div className=" flex max-w-7xl mx-auto text-left relative z-10">
+            <div className="w-4/5 sticky top-0 flex flex-col justify-between h-[calc(100vh-4rem)]">
               <div>
                 <img src={Profile} alt="Marc Weber" className="rounded-full w-40 h-40 border-4 border-slate-900 bg-slate-900 mb-5" />
                 <span className="text-5xl font-bold">Marc Weber</span>
