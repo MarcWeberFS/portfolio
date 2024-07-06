@@ -64,3 +64,27 @@
 .margin-top-50 {
   margin-top: 50px !important;
 }
+
+
+.underline-animation {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  display: block;
+  margin-top: 0px;
+  right: 0;
+  background: white;
+  transition: width 0.4s ease;
+}
+
+.group:hover .underline-animation::after {
+  width: 100%;
+  left: 0;
+  background: white;
+}

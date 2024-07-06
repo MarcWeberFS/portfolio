@@ -53,6 +53,11 @@ function App() {
     Link: "https://www.swisscard.ch/en"
   };
 
+  const jiggleAnimation = {
+    whileHover: { rotate: [0, -10, 10, -10, 10, 0] },
+    transition: { duration: 0.6, ease: "easeInOut" }
+  };
+
   return (
     <div className="App font-sans h-screen overflow-hidden">
       <header className="App-header bg-slate-950 text-white h-full">
@@ -76,9 +81,21 @@ function App() {
                     className="text-white"
                   />
                 <br />
-                <div className='mb-5 mt-1'>
-                  <span className="material-icons ml-2 mb-auto text-lg mr-2">location_on</span>
+                <div className='mt-2'>
+                  <span className="material-icons mb-auto text-lg mr-2">location_on</span>
                   <span className="text-xl">Zürich</span>
+                </div>
+                <div className='mt-1 group'>
+                  <a href="mailto:marc.robin.weber@gmail.com" className='flex items-center text-xl'>
+                    <motion.span className="material-icons mb-auto text-lg mr-2" {...jiggleAnimation}>mail</motion.span>
+                    <span className="underline-animation">marc.robin.weber@gmail.com</span>
+                  </a>
+                </div>
+                <div className='mb-5 mt-1 group'>
+                  <a href="tel:+41792739667" className='flex items-center text-xl'>
+                    <motion.span className="material-icons mb-auto text-lg mr-2" {...jiggleAnimation}>phone</motion.span>
+                    <span className="underline-animation">+41 79 273 96 67</span>
+                  </a>
                 </div>
                 <Download 
                     Label="Download CV"
