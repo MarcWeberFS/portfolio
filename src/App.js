@@ -106,7 +106,7 @@ function App() {
                 <span className="text-3xl sm:text-5xl font-bold mb-5">Marc Weber</span>
                 <br />
                 <FlipWords
-                  words={["Full Stack Software Engineer", "AWS Foundation Certified", "Business Information Technology Student"]}
+                  words={["Full Stack Software Engineer", "AWS Certified Cloud Practitioner", "Business Information Technology Student"]}
                   duration={20000}
                   className="text-white text-lg sm:text-2xl"
                 />
