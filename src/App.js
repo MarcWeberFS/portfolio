@@ -11,8 +11,10 @@ import ThumbnailCard from './component/ThumbnailCard';
 import Portfolio from './assets/Portfolio.PNG';
 import PolicySign from './assets/PolicySign.png';
 import Cardea from './assets/Cardea.png';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
+  <Analytics />
   const cardEducation = {
     Date: 'Sep 2022 - Jul 2025',
     Role: 'Bachelor of Applied Science at ZHAW, Business Information Technology',
