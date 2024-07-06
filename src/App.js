@@ -82,16 +82,15 @@ function App() {
     Link: "https://www.cardea.webflow.io/"
   };
 
-
   const jiggleAnimation = {
     whileHover: { rotate: [0, -10, 10, -10, 10, 0] },
     transition: { duration: 0.6, ease: "easeInOut" }
   };
 
   return (
-    <div className="App font-sans h-screen overflow-hidden">
+    <div className="App font-sans min-h-screen overflow-hidden">
       <Analytics />
-      <div className="App-header bg-slate-950 text-white h-full">
+      <div className="App-header bg-slate-950 text-white min-h-screen">
         <div className="background-container absolute inset-0 z-0">
           <ParticleCanvas />
           <div className="inverted-canvas">
@@ -99,17 +98,17 @@ function App() {
           </div>
         </div>
         <Spotlight />
-        <div className="w-full h-full overflow-y-auto mr-5 pt-5 ml-5">
-          <div className=" flex max-w-7xl mx-auto text-left relative z-10">
-            <div className="w-4/5 sticky top-0 flex flex-col justify-between h-[calc(100vh-4rem)]">
+        <div className="w-full h-full overflow-y-auto px-4 py-5 sm:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row max-w-7xl mx-auto text-left relative z-10">
+            <div className="w-full lg:w-2/5 lg:sticky top-0 flex flex-col justify-between lg:h-[calc(100vh-4rem)] mb-8 lg:mb-0">
               <div>
-                <img src={Profile} alt="Marc Weber" className="rounded-full w-40 h-40 border-4 border-slate-900 bg-slate-900 mb-5" />
-                <span className="text-5xl font-bold">Marc Weber</span>
+                <img src={Profile} alt="Marc Weber" className="rounded-full w-32 h-32 sm:w-40 sm:h-40 border-4 border-slate-900 bg-slate-900 mb-4 sm:mb-5 mx-auto lg:mx-0" />
+                <span className="text-3xl sm:text-5xl font-bold">Marc Weber</span>
                 <br />
                 <FlipWords
                   words={["Full Stack Software Engineer", "AWS Foundation Certified", "Business Information Technology Student"]}
                   duration={20000}
-                  className="text-white"
+                  className="text-white text-lg sm:text-2xl"
                 />
                 <br />
                 <div className='mt-2'>
@@ -117,13 +116,13 @@ function App() {
                   <span className="text-xl">Zürich</span>
                 </div>
                 <div className='mt-1 group'>
-                  <a href="mailto:marc.robin.weber@gmail.com" className='flex items-center text-xl'>
+                  <a href="mailto:marc.robin.weber@gmail.com" className='flex items-center text-xl group'>
                     <motion.span className="material-icons mb-auto text-lg mr-2" {...jiggleAnimation}>mail</motion.span>
                     <span className="underline-animation">marc.robin.weber@gmail.com</span>
                   </a>
                 </div>
                 <div className='mb-5 mt-1 group'>
-                  <a href="tel:+41792739667" className='flex items-center text-xl'>
+                  <a href="tel:+41792739667" className='flex items-center text-xl group'>
                     <motion.span className="material-icons mb-auto text-lg mr-2" {...jiggleAnimation}>phone</motion.span>
                     <span className="underline-animation">+41 79 273 96 67</span>
                   </a>
@@ -133,7 +132,7 @@ function App() {
                   Link="https://www.linkedin.com/in/marc-weber-2a2a7b1b0/"
                 />
               </div>
-              <div className="flex space-x-4 mt-4">
+              <div className="flex space-x-4 mt-4 justify-center lg:justify-start">
                 <a href='https://github.com/MarcWeberFS'>
                   <motion.svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -162,7 +161,7 @@ function App() {
                 </a>
               </div>
             </div>
-            <div className="w-full">
+            <div className="w-full lg:w-3/5">
               <div className="p-4 space-y-4 text-slate-300">
                 <div className="text-3xl text-white font-semibold">About</div>
                 <div className="text-slate-300">
@@ -171,7 +170,7 @@ function App() {
                   <br />
                   Currently pursuing a Bachelor of Applied Science in Business Information Technology at ZHAW, I am honing my understanding of <span className="text-white font-semibold">economics and management</span> while applying these principles to drive company growth. My past experience at Swisscard and the Swiss Armed Forces, coupled with my proficiency in <span className="text-white font-semibold">AWS services</span>, positions me to create software solutions that democratize access to financial services, reflecting my commitment to leveraging technology for social empowerment.
                 </div>
-                <div className="text-3xl text-white font-semibold margin-top-50">Education</div>
+                <div className="text-3xl text-white font-semibold mt-8">Education</div>
                 <Card
                   Date={cardEducation.Date}
                   Role={cardEducation.Role}
@@ -179,7 +178,7 @@ function App() {
                   Skills={cardEducation.Skills}
                   Link={cardEducation.Link}
                 />
-                <div className="text-3xl text-white font-semibold margin-top-50">Work Experience</div>
+                <div className="text-3xl text-white font-semibold mt-8">Work Experience</div>
                 <Card
                   Date={card1.Date}
                   Role={card1.Role}
@@ -201,7 +200,7 @@ function App() {
                   Skills={card3.Skills}
                   Link={card3.Link}
                 />
-                <div className="text-3xl text-white font-semibold margin-top-50">Projects</div>
+                <div className="text-3xl text-white font-semibold mt-8">Projects</div>
                 <ThumbnailCard
                   ImageSrc={project1.ImageSrc}
                   Title={project1.Title}
