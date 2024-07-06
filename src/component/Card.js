@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SkillBadge from './SkillBadge';
+import SkillBadge from './Skillbadge';
 import { motion } from 'framer-motion';
 import '../App.css';
 
