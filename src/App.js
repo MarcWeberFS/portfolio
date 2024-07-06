@@ -14,7 +14,6 @@ import Cardea from './assets/Cardea.png';
 import { Analytics } from "@vercel/analytics/react"
 
 function App() {
-  <Analytics />
   const cardEducation = {
     Date: 'Sep 2022 - Jul 2025',
     Role: 'Bachelor of Applied Science at ZHAW, Business Information Technology',
@@ -91,7 +90,8 @@ function App() {
 
   return (
     <div className="App font-sans h-screen overflow-hidden">
-      <header className="App-header bg-slate-950 text-white h-full">
+      <Analytics />
+      <div className="App-header bg-slate-950 text-white h-full">
         <div className="background-container absolute inset-0 z-0">
           <ParticleCanvas />
           <div className="inverted-canvas">
@@ -233,7 +233,7 @@ function App() {
             </div>
           </div>
         </div>
-      </header>
+      </div>
     </div>
   );
 }
