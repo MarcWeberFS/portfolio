@@ -32,7 +32,7 @@ export default function Download({ Label }) {
           mass: 0.1,
         },
       }}
-      className="inline-flex items-center justify-center px-6 py-2 rounded-md relative radial-gradient"
+      className="inline-flex items-center justify-center px-6 py-2 rounded-md relative radial-gradient cursor-pointer"
     >
       <span className="text-neutral-100 tracking-wide font-light block relative linear-mask flex items-center">
         {Label} <span className="material-icons ml-2">download</span>
