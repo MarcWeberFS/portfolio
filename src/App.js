@@ -72,6 +72,7 @@ function App() {
               <span className="material-icons ml-2 mb-auto text-lg mr-2">
               location_on
               </span><span className="text-xl">Zürich</span>
+              <br></br>
               <Download 
                 Label="Download CV"
                 Link="https://www.linkedin.com/in/marc-weber-2a2a7b1b0/"
