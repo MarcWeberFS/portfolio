@@ -6,6 +6,7 @@ import Card from './component/Card';
 import Download from './component/Download';
 import Profile from './assets/profile.jpg';
 import { motion } from 'framer-motion';
+import { FlipWords } from './component/flip-words';
 
 function App() {
   const cardEducation = {
@@ -69,7 +70,11 @@ function App() {
                 <img src={Profile} alt="Marc Weber" className="rounded-full w-40 h-40 border-4 border-slate-900 bg-slate-900 mb-5" />
                 <span className="text-5xl font-bold">Marc Weber</span>
                 <br />
-                <span className="text-2xl">Full Stack Software Engineer</span>  
+                <FlipWords 
+                    words={["Full Stack Software Engineer", "AWS Foundation Certified", "Business Information Technology Student"]}
+                    duration={20000}
+                    className="text-white"
+                  />
                 <br />
                 <div className='mb-5 mt-1'>
                   <span className="material-icons ml-2 mb-auto text-lg mr-2">location_on</span>
