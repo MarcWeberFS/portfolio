@@ -103,7 +103,7 @@ function App() {
             <div className="w-full lg:w-2/5 lg:sticky top-0 flex flex-col justify-between h-[calc(100vh-4rem)] mb-8 lg:mb-0">
               <div>
                 <img src={Profile} alt="Marc Weber" className="rounded-full w-32 h-32 sm:w-40 sm:h-40 border-4 border-slate-900 bg-slate-900 mb-4 sm:mb-5 mx-auto lg:mx-0" />
-                <span className="text-3xl sm:text-5xl font-bold">Marc Weber</span>
+                <span className="text-3xl sm:text-5xl font-bold mb-5">Marc Weber</span>
                 <br />
                 <FlipWords
                   words={["Full Stack Software Engineer", "AWS Foundation Certified", "Business Information Technology Student"]}
@@ -116,9 +116,9 @@ function App() {
                   <span className="text-xl">Zürich</span>
                 </div>
                 <div className='mt-1 group'>
-                  <a href="mailto:marc.robin.weber@gmail.com" className='flex items-center text-xl group'>
+                  <a href="mailto:work@webermarc.com" className='flex items-center text-xl group'>
                     <motion.span className="material-icons mb-auto text-lg mr-2" {...jiggleAnimation}>mail</motion.span>
-                    <span className="underline-animation">marc.robin.weber@gmail.com</span>
+                    <span className="underline-animation">work@webermarc.com</span>
                   </a>
                 </div>
                 <div className='mb-5 mt-1 group'>
