@@ -127,10 +127,13 @@ function App() {
                     <span className="underline-animation">+41 79 273 96 67</span>
                   </a>
                 </div>
+
                 <Download
                   Label="Download CV"
                   Link="https://www.linkedin.com/in/marc-weber-2a2a7b1b0/"
                 />
+
+
               </div>
               <div className='lg:justify-start'>
                 <div className="flex space-x-4 mt-4 justify-center lg:justify-start">
