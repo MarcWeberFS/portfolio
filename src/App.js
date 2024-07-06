@@ -4,6 +4,7 @@ import Spotlight from './component/Spotlight';
 import './App.css';
 import Card from './component/Card';
 import Download from './component/Download';
+import Profile from './assets/profile.jpg';
 
 function App() {
   const cardEducation = {
@@ -63,6 +64,7 @@ function App() {
         <div className="w-full h-full overflow-y-auto">
           <div className="content flex max-w-7xl mx-auto text-left relative z-10 h-full">
             <div className="w-4/5 sticky top-0">
+              <img src={Profile} alt="Marc Weber" className="rounded-full w-40 h-40 border-4 border-slate-900 bg-slate-900 mb-5" />
               <span className="text-5xl font-bold">Marc Weber</span>
               <br></br>
               <span className="text-2xl">Full Stack Software Engineer</span>
