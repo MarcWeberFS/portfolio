@@ -136,12 +136,12 @@
 
 @media (max-width: 768px) {
   .cv-iframe {
-    height: calc(100vh - 50px); /* Adjust height to fit better on mobile */
+    height: calc(100vh - 50px);
   }
 }
 
 @media (max-width: 480px) {
   .cv-iframe {
-    height: calc(100vh - 50px); /* Further adjust height for smaller screens */
+    height: calc(100vh - 50px);
   }
 }
