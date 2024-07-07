@@ -17,7 +17,7 @@ export default function ThumbnailCard({ ImageSrc, Title, Description, Skills, Li
         }}
         transition={{ duration: 0.3 }}
       >
-        <div className="lg:w-48 w-24 text-sm text-slate-400 italic">
+        <div className="lg:w-48 w-20 text-sm text-slate-400 italic">
           <img src={ImageSrc} alt={Title} className="w-full h-auto rounded-lg" />
         </div>
         <div className="w-full">

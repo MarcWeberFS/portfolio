@@ -104,13 +104,14 @@ function Home() {
               <div>
                 <img src={Profile} alt="Marc Weber" className="rounded-full w-32 h-32 sm:w-40 sm:h-40 border-4 border-slate-900 bg-slate-900 mb-4 sm:mb-5 mx-auto lg:mx-0" />
                 <span className="text-3xl sm:text-5xl font-bold mb-5">Marc Weber</span>
-                <br />
-                <FlipWords
-                  words={["Full Stack Software Engineer", "AWS Certified Cloud Practitioner", "Business Information Technology Student"]}
-                  duration={20000}
-                  className="text-white text-lg sm:text-2xl"
-                />
-                <br />
+
+                <div className='mt-2'>
+                    <FlipWords
+                    words={["Full Stack Software Engineer", "AWS Certified Cloud Practitioner", "Business Information Technology Student"]}
+                    duration={20000}
+                    className="text-white text-lg sm:text-2xl"
+                    />
+                </div>
                 <div className='mt-2'>
                   <span className="material-icons mb-auto text-lg mr-2">location_on</span>
                   <span className="text-xl">Zürich</span>
@@ -122,15 +123,14 @@ function Home() {
                   </a>
                 </div>
                 <div className='mb-5 mt-1 group'>
-                  <a href="tel:+41792739667" className='flex items-center text-xl group'>
+                  <a href="tel:0792739667" className='flex items-center text-xl group'>
                     <motion.span className="material-icons mb-auto text-lg mr-2" {...jiggleAnimation}>phone</motion.span>
-                    <span className="underline-animation">+41 79 273 96 67</span>
+                    <span className="underline-animation">079 273 96 67</span>
                   </a>
                 </div>
 
                 <Download
-                  Label="Download CV"
-                  Link="https://www.linkedin.com/in/marc-weber-2a2a7b1b0/"
+                  Label="Open CV"
                 />
 
 
