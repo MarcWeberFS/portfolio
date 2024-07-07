@@ -127,21 +127,20 @@
   animation: featherEffect 0.70s forwards;
 }
 
-
-.cv-iframe {
-  width: 100%;
+.pdf-viewer-container {
   height: 100vh;
-  border: none;
+  width: 100%;
+  overflow: auto;
 }
 
 @media (max-width: 768px) {
-  .cv-iframe {
-    height: calc(100vh - 50px);
+  .pdf-viewer-container {
+    height: 100vh;
   }
 }
 
 @media (max-width: 480px) {
-  .cv-iframe {
-    height: calc(100vh - 50px);
+  .pdf-viewer-container {
+    height: 100vh;
   }
 }

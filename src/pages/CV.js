@@ -1,15 +1,17 @@
 import React from 'react';
+import { Worker, Viewer } from '@react-pdf-viewer/core';
+import '@react-pdf-viewer/core/lib/styles/index.css';
+import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 import CV from '../assets/CV_Marc_Weber.pdf';
-import '../App.css'; // Ensure you have the CSS included
 
 const CVPage = () => {
   return (
     <div className="flex items-center justify-center min-h-screen">
-      <iframe
-        src={CV}
-        className="cv-iframe"
-        title="CV"
-      ></iframe>
+      <Worker workerUrl={`https://unpkg.com/pdfjs-dist@${version}/build/pdf.worker.min.js`}>
+        <div style={{ height: '100vh', width: '100%', overflow: 'hidden' }}>
+          <Viewer fileUrl={CV} />
+        </div>
+      </Worker>
     </div>
   );
 };
