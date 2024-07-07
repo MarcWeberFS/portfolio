@@ -126,3 +126,22 @@
 .feather-effect {
   animation: featherEffect 0.70s forwards;
 }
+
+
+.cv-iframe {
+  width: 100%;
+  height: 100vh;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .cv-iframe {
+    height: calc(100vh - 50px); /* Adjust height to fit better on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .cv-iframe {
+    height: calc(100vh - 50px); /* Further adjust height for smaller screens */
+  }
+}

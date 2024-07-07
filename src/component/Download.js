@@ -17,7 +17,7 @@ export default function Download({ Label }) {
         onClick={handleClick}
         initial={{ "--x": "100%", scale: 1 }}
         animate={{ "--x": "-100%" }}
-        whileTap={{ scale: 0.90 }}
+        whileTap={{ scale: 0.75 }}
         transition={{
           repeat: Infinity,
           repeatType: "loop",
