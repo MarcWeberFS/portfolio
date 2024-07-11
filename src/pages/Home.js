@@ -11,7 +11,8 @@ import ThumbnailCard from '../component/ThumbnailCard';
 import Portfolio from '../assets/Portfolio.PNG';
 import PolicySign from '../assets/PolicySign.png';
 import Cardea from '../assets/Cardea.png';
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function Home() {
   const cardEducation = {
@@ -90,6 +91,7 @@ function Home() {
   return (
     <div className="App font-sans min-h-screen overflow-hidden">
       <Analytics />
+      <SpeedInsights />
       <div className="App-header bg-slate-950 text-white min-h-screen">
         <div className="background-container absolute inset-0 z-0">
           <ParticleCanvas />
