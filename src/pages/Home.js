@@ -87,7 +87,7 @@ function Home() {
   const project4 = {
     ImageSrc: Langpartner,
     Title: "Lang + Partner Finanzdienstleistungen GmbH",
-    Description: "Created a Webapp for a financial services company. Most features are insurance related such as digital signature of a mandate. The herosection features a parallax effect which takes affect based on the location of the mouse.",
+    Description: "Created a Webapp for a financial services company. Most features are insurance related such as digital signature of a mandate. The herosection features a parallax effect which adjusts the background image based on the location of the mouse.",
     Skills: ['React', 'AWS', 'Parallax', 'JavaScript', 'Vercel', 'Tailwind CSS'],
     Link: "https://www.langpartner.ch"
   };
@@ -197,10 +197,10 @@ function Home() {
               <div className="p-4 space-y-4 text-slate-300">
                 <div className="text-3xl text-white font-semibold">About</div>
                 <div className="text-slate-300">
-                  Cardea Insurance represents the culmination of my journey in tech and business, where I leverage my skills in <span className="text-white font-semibold">web application development</span> to revolutionize the insurance industry. With a focus on enhancing user experience and automating processes, my team and I have developed a user-friendly digital signature solution and a premium calculator using robotics technology. These innovations not only streamline customer interactions but also embody our digital-first ethos, ensuring efficiency and accessibility.
+                  Cardea Insurance represents the culmination of my journey in tech and business, where I leverage my skills in <span className="text-white font-semibold">web application development</span> to disrupt the insurance industry. With a focus on enhancing user experience and automating processes, my team and I have developed a user-friendly digital signature solution and a premium calculator using robotics technology. These innovations not only streamline customer interactions but also embody our digital-first ethos, ensuring efficiency and accessibility.
                   <br />
                   <br />
-                  Currently pursuing a Bachelor of Applied Science in Business Information Technology at ZHAW, I am honing my understanding of <span className="text-white font-semibold">economics and management</span> while also building full stack applications from scratch for the IT heavy subjects. My past experience at Swisscard and the Swiss Armed Forces, coupled with my proficiency in <span className="text-white font-semibold">AWS services</span>, positions me to create software solutions that can scale and adapt to the evolving digital landscape.
+                  Currently pursuing a Bachelor of Applied Science in Business Information Technology at ZHAW, I am honing my understanding of <span className="text-white font-semibold">economics and management</span> while also building full stack applications using Java and Spring Boot from scratch for the IT heavy subjects. My past experience at Swisscard and the Swiss Armed Forces, coupled with my proficiency in <span className="text-white font-semibold">AWS services</span>, positions me to create software solutions that can scale and adapt to the evolving digital landscape.
                 </div>
                 <div className="text-3xl text-white font-semibold mt-8">Education</div>
                 <Card
