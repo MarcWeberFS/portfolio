@@ -13,6 +13,7 @@ import PolicySign from '../assets/PolicySign.png';
 import Cardea from '../assets/Cardea.png';
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import Langpartner from '../assets/Langpartner.PNG';
 
 function Home() {
   const cardEducation = {
@@ -81,6 +82,14 @@ function Home() {
     Description: "Designed and deployed a customer-facing web application. Implemented online signature for mandates. Using robotics technology to calculate premiums",
     Skills: ['AWS', 'Webflow', 'JavaScript', 'MySQL', 'Robotics'],
     Link: "https://cardea.webflow.io/"
+  };
+
+  const project4 = {
+    ImageSrc: Langpartner,
+    Title: "Lang + Partner Finanzdienstleistungen GmbH",
+    Description: "Created a Webapp for a financial services company. Most features are insurance related such as digital signature of a mandate. The herosection features a parallax effect which takes affect based on the location of the mouse.",
+    Skills: ['React', 'AWS', 'Parallax', 'JavaScript', 'Vercel', 'Tailwind'],
+    Link: "https://www.langpartner.ch"
   };
 
   const jiggleAnimation = {
@@ -224,6 +233,14 @@ function Home() {
                   Link={card3.Link}
                 />
                 <div className="text-3xl text-white font-semibold mt-8">Projects</div>
+                <ThumbnailCard
+                  ImageSrc={project4.ImageSrc}
+                  Title={project4.Title}
+                  Description={project4.Description}
+                  Skills={project4.Skills}
+                  Link={project4.Link}
+                />
+
                 <ThumbnailCard
                   ImageSrc={project1.ImageSrc}
                   Title={project1.Title}
