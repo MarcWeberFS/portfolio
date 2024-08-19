@@ -56,7 +56,7 @@ function Home() {
     Date: "Aug 2020 - Dec 2021",
     Role: "Full-Stack Software Engineer at Swisscard",
     Description: "Developed and enhanced Octopus UI application. Implemented monitoring systems with Prometheus and Grafana. Contributed to Scrum team for automated solutions.",
-    Skills: ['Spring Boot', 'Docker', 'React', 'CI/CD', 'Prometheus'],
+    Skills: ['Java','Spring Boot', 'Docker', 'React', 'CI/CD', 'Prometheus'],
     Link: "https://www.swisscard.ch/en"
   };
 
@@ -64,7 +64,7 @@ function Home() {
     ImageSrc: Portfolio,
     Title: "Portfolio Website",
     Description: "Designed and deployed a customer-facing web Portfolio. Listing my achievements and being a hub for the work I've done online.",
-    Skills: ['React', 'Tailwind', 'JavaScript', 'Framer Motion', 'Vercel'],
+    Skills: ['React', 'Tailwind CSS', 'JavaScript', 'Framer Motion', 'Vercel'],
     Link: "https://github.com/MarcWeberFS/portfolio"
   };
 
@@ -72,7 +72,7 @@ function Home() {
     ImageSrc: PolicySign,
     Title: "Policysign",
     Description: "Designed and deployed a customer-facing web application. Used for managing, templating, downloading, sending and signing documents.",
-    Skills: ['Azure', 'Svelte', 'Spring Boot', 'MongoDB'],
+    Skills: ['Azure', 'Svelte', 'Java','Spring Boot', 'MongoDB'],
     Link: "https://github.com/MarcWeberFS/PolicySign"
   };
 
@@ -88,7 +88,7 @@ function Home() {
     ImageSrc: Langpartner,
     Title: "Lang + Partner Finanzdienstleistungen GmbH",
     Description: "Created a Webapp for a financial services company. Most features are insurance related such as digital signature of a mandate. The herosection features a parallax effect which takes affect based on the location of the mouse.",
-    Skills: ['React', 'AWS', 'Parallax', 'JavaScript', 'Vercel', 'Tailwind'],
+    Skills: ['React', 'AWS', 'Parallax', 'JavaScript', 'Vercel', 'Tailwind CSS'],
     Link: "https://www.langpartner.ch"
   };
 
