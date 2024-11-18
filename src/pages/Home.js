@@ -14,6 +14,7 @@ import Cardea from '../assets/Cardea.png';
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import Langpartner from '../assets/Langpartner.PNG';
+import VideoDownloader from '../assets/VideoDownloader.png';
 
 function Home() {
   const cardEducation = {
@@ -90,6 +91,14 @@ function Home() {
     Description: "Created a Webapp for a financial services company. Most features are insurance related such as digital signature of a mandate. The herosection features a parallax effect which adjusts the background image based on the location of the mouse.",
     Skills: ['React', 'AWS', 'Parallax', 'JavaScript', 'Vercel', 'Tailwind CSS'],
     Link: "https://www.langpartner.ch"
+  };
+
+  const project5 = {
+    ImageSrc: VideoDownloader,
+    Title: "Camunda Video Downloader and Transcription Creator",
+    Description: "Using a Spring Boot backend paired with Camunda, with the help of AWS Translate, Transcribe and EC2. The user provides either a YouTube or an Instagram link set the source and target language for captions and send off the request. AWS services used are S3 to store and provide download links to videos, EC2 to host the app, Translate, Transcribe and ECR.",
+    Skills: ['Camunda', 'AWS', 'Spring Boot', 'Java', 'Python', 'Tailwind CSS'],
+    Link: "https://github.com/MarcWeberFS/camunda-video-translator"
   };
 
   const jiggleAnimation = {
@@ -233,6 +242,14 @@ function Home() {
                   Link={card3.Link}
                 />
                 <div className="text-3xl text-white font-semibold mt-8">Projects</div>
+                <ThumbnailCard
+                  ImageSrc={project5.ImageSrc}
+                  Title={project5.Title}
+                  Description={project5.Description}
+                  Skills={project5.Skills}
+                  Link={project5.Link}
+                />
+
                 <ThumbnailCard
                   ImageSrc={project4.ImageSrc}
                   Title={project4.Title}
