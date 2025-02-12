@@ -17,7 +17,7 @@ export default function Card({ Date, Role, Description, Skills, Link }) {
         }}
         transition={{ duration: 0.3 }}
       >
-        <div className="lg:w-48 w-20 text-sm text-slate-400 italic">
+        <div className="lg:w-48 w-20 text-sm text-slate-400 italic pt-1">
           {Date}
         </div>
         <div className="w-full">
