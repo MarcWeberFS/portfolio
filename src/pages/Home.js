@@ -38,7 +38,7 @@ function Home() {
   };
 
   const card1 = {
-    Date: "Mar 2023 - present",
+    Date: "Mar 2023 - Dec 2024",
     Role: "Co-Founder at Cardea Insurance GmbH",
     Description: "Designed and deployed a customer-facing web application. Integrated AWS services to streamline processes. Led strategic recruitment and team building.",
     Skills: ['AWS', 'Webflow', 'JavaScript', 'Leadership'],
@@ -59,6 +59,14 @@ function Home() {
     Description: "Developed and enhanced Octopus UI application. Implemented monitoring systems with Prometheus and Grafana. Contributed to Scrum team for automated solutions.",
     Skills: ['Java','Spring Boot', 'Docker', 'React', 'CI/CD', 'Prometheus'],
     Link: "https://www.swisscard.ch/en"
+  };
+
+  const card4 = {
+    Date: "Jan 2025 - Present",
+    Role: "Document Template Developer at Zurich Insurance",
+    Description: "Workingstudent at Zurich Insurance. Developing and maintaining outbound document templates.",
+    Skills: ['ISIS Papyrus'],
+    Link: "https://www.zurich.ch/"
   };
 
   const project1 = {
@@ -221,6 +229,13 @@ function Home() {
                 />
                 <div className="text-3xl text-white font-semibold mt-8">Work Experience</div>
                 <Card
+                  Date={card4.Date}
+                  Role={card4.Role}
+                  Description={card4.Description}
+                  Skills={card4.Skills}
+                  Link={card4.Link}
+                />
+                <Card
                   Date={card1.Date}
                   Role={card1.Role}
                   Description={card1.Description}
@@ -283,7 +298,7 @@ function Home() {
                 />
 
                 <div className='text-center' style={{ marginBottom: '2rem' }}>
-                  © Marc Weber | 2024
+                  © Marc Weber | 2025
                 </div>
               </div>
             </div>
