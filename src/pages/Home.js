@@ -15,6 +15,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import Langpartner from '../assets/Langpartner.PNG';
 import VideoDownloader from '../assets/VideoDownloader.png';
+import ViviennePortfolio from '../assets/Vivienne_portfolio.png';
 
 function Home() {
   const cardEducation = {
@@ -105,8 +106,16 @@ function Home() {
     ImageSrc: VideoDownloader,
     Title: "Camunda Video Downloader and Transcription Creator",
     Description: "Using a Spring Boot backend paired with Camunda, with the help of AWS Translate, Transcribe and EC2. The user provides either a YouTube or an Instagram link set the source and target language for captions and send off the request. AWS services used are S3 to store and provide download links to videos, EC2 to host the app, Translate, Transcribe and ECR.",
-    Skills: ['Camunda', 'AWS', 'Spring Boot', 'Java', 'Python', 'Tailwind CSS'],
+    Skills: ['Camunda', 'AWS', 'Spring Boot', 'Java', 'React', 'Tailwind CSS'],
     Link: "https://github.com/MarcWeberFS/camunda-video-translator"
+  };
+
+  const project6 = {
+    ImageSrc: ViviennePortfolio,
+    Title: "Portfolio page for Architecture ETH Graduate",
+    Description: "In order to boosts my sisters visibility online and likelyhood of getting a job offer, we created a portfolio for her together to showcase her work. The page is built with React and Tailwind CSS.",
+    Skills: ['React', 'Tailwind CSS'],
+    Link: "https://vivienneweber.com"
   };
 
   const jiggleAnimation = {
@@ -271,6 +280,14 @@ function Home() {
                   Description={project4.Description}
                   Skills={project4.Skills}
                   Link={project4.Link}
+                />
+
+                <ThumbnailCard
+                  ImageSrc={project6.ImageSrc}
+                  Title={project6.Title}
+                  Description={project6.Description}
+                  Skills={project6.Skills}
+                  Link={project6.Link}
                 />
 
                 <ThumbnailCard
