@@ -9,19 +9,20 @@ import { motion } from 'framer-motion';
 import { FlipWords } from '../component/flip-words';
 import ThumbnailCard from '../component/ThumbnailCard';
 import Portfolio from '../assets/Portfolio.PNG';
-import PolicySign from '../assets/PolicySign.png';
+import PolicySign from '../assets/policysign_logo.png';
 import Cardea from '../assets/Cardea.png';
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 import Langpartner from '../assets/Langpartner.PNG';
-import VideoDownloader from '../assets/VideoDownloader.png';
+import VideoDownloader from '../assets/camunda_videoo_downloader.png';
 import ViviennePortfolio from '../assets/Vivienne_portfolio.png';
+import TextToPostGIS from '../assets/text-to-postgis.png';
 
 function Home() {
   const cardEducation = {
-    Date: 'Sep 2022 - Jul 2025',
+    Date: 'Sep 2022 - Sep 2025',
     Role: 'Bachelor of Applied Science at ZHAW, Business Information Technology',
-    Description: `The Bachelor of Science in Business Information Technology is designed to equip students with a blend of IT skills and business knowledge. The program focuses on current topics and practical examples, ensuring relevance to the digitalization of society. It prepares students for roles at the intersection of people and technology, focusing on designing, implementing, and operating innovative and complex socio-technical systems.`,
+    Description: `The Bachelor of Science in Business Information Technology is designed to equip students with a blend of IT skills and business knowledge. The program focuses on current topics such as AI and webdevelopement and practical examples as seen in enterprises. It prepares students for roles at the intersection of people and technology.`,
     Skills: [
       'Full-Stack Development',
       'Project Management',
@@ -41,32 +42,32 @@ function Home() {
   const card1 = {
     Date: "Mar 2023 - Dec 2024",
     Role: "Co-Founder at Cardea Insurance GmbH",
-    Description: "Designed and deployed a customer-facing web application. Integrated AWS services to streamline processes. Led strategic recruitment and team building.",
+    Description: "Designed and maintained a customer-facing web application. Implemented online signature for mandates. Used robotics to calculate and provide a premiums calculator. Built the backend up with Lambda functions and EC2. Led strategic marketing / recruitment and team building.",
     Skills: ['AWS', 'Webflow', 'JavaScript', 'Leadership'],
-    Link: "https://cardea.webflow.io/"
+    Link: ""
   };
 
   const card2 = {
     Date: "Jan 2022 - May 2022",
     Role: "Telematics Technician Soldier during the Rekrutenschule",
     Description: "Collaborated on military communication objectives. Established and maintained mobile communication networks. Resolved network issues to ensure operations.",
-    Skills: ['Communication Networks', 'Team Collaboration', 'Problem-Solving'],
+    Skills: ['Communication Networks', 'Team Collaboration'],
     Link: "https://www.miljobs.ch/functions/telematiksoldat"
   };
 
   const card3 = {
     Date: "Aug 2020 - Dec 2021",
     Role: "Full-Stack Software Engineer at Swisscard",
-    Description: "Developed and enhanced Octopus UI application. Implemented monitoring systems with Prometheus and Grafana. Contributed to Scrum team for automated solutions.",
-    Skills: ['Java','Spring Boot', 'Docker', 'React', 'CI/CD', 'Prometheus'],
+    Description: "Developed and maintained a DevOps monitoring application for failed Jenkins pipelines. Implemented monitoring systems with Prometheus and Grafana. Worked on automation topics which were developped using Camunda and Spring Boot.",
+    Skills: ['Java','Spring Boot', 'Docker', 'React', 'CI/CD', 'Camunda', 'Prometheus'],
     Link: "https://www.swisscard.ch/en"
   };
 
   const card4 = {
     Date: "Jan 2025 - Present",
     Role: "Document Template Developer at Zurich Insurance",
-    Description: "Workingstudent at Zurich Insurance. Developing and maintaining outbound document templates.",
-    Skills: ['ISIS Papyrus'],
+    Description: "Workingstudent at Zurich Insurance in the Enterprise Content Management team. Working on outbound topics such as creating documents, testing documents. Developped API microservices for the outbound platform using Java and Spring Boot to communicate securely. More recently working on the inbound document extraction team using TCG.",
+    Skills: ['ISIS Papyrus', 'TCG', 'Spring-Boot', 'Java'],
     Link: "https://www.zurich.ch/"
   };
 
@@ -118,6 +119,14 @@ function Home() {
     Link: "https://vivienneweber.com"
   };
 
+  const project7 = {
+    ImageSrc: TextToPostGIS,
+    Title: "Text to PostGIS - Bacherlor Thesis",
+    Description: "A text to PostGIS converter that allows multiple feedback loops which improve the response of the AI. The performance of the AIs and the impact the feedback loops had on the performance were evaluated in self designed Benchmark. The benchmark contains 25 questions with varying difficulty. The a small app to interact with the LLMs and the results of the Benchmark are displayed on the website.",
+    Skills: ['React', 'Spring Boot', 'PostGIS', 'Java', 'PostgreSQL', 'AI'],
+    Link: "https://text-to-postgis.com/"
+  };
+
   const jiggleAnimation = {
     whileHover: { rotate: [0, -10, 10, -10, 10, 0] },
     transition: { duration: 0.6, ease: "easeInOut" }
@@ -144,7 +153,7 @@ function Home() {
 
                 <div className='mt-2'>
                     <FlipWords
-                    words={["Full Stack Software Engineer", "AWS Certified Cloud Practitioner", "Business Information Technology Student"]}
+                    words={["Full Stack Software Engineer", "AWS Cloud Practitioner", "Business Information Technology Graduate"]}
                     duration={20000}
                     className="text-white text-lg sm:text-2xl"
                     />
@@ -223,10 +232,10 @@ function Home() {
               <div className="p-4 space-y-4 text-slate-300">
                 <div className="text-3xl text-white font-semibold">About</div>
                 <div className="text-slate-300">
-                  Cardea Insurance represents the culmination of my journey in tech and business, where I leverage my skills in <span className="text-white font-semibold">web application development</span> to disrupt the insurance industry. With a focus on enhancing user experience and automating processes, my team and I have developed a user-friendly digital signature solution and a premium calculator using robotics technology. These innovations not only streamline customer interactions but also embody our digital-first ethos, ensuring efficiency and accessibility.
+                  Graduated from ZHAW with a Bachelor in Business Information Technology. This education has equipped me with a solid foundation in <span className="text-white font-semibold">software engineering</span>, <span className="text-white font-semibold">project management</span>, and <span className="text-white font-semibold">artificial intelligence</span>. There are two aspects in IT which I am most passionate about. First being process automation with my preferred stack being Spring Boot and Camunda (7). The second aspect are cloud services.
                   <br />
                   <br />
-                  Currently pursuing a Bachelor of Applied Science in Business Information Technology at ZHAW, I am honing my understanding of <span className="text-white font-semibold">economics and management</span> while also building full stack applications using Java and Spring Boot from scratch for the IT heavy subjects. My past experience at Swisscard and the Swiss Armed Forces, coupled with my proficiency in <span className="text-white font-semibold">AWS services</span>, positions me to create software solutions that can scale and adapt to the evolving digital landscape.
+                  The reason I am passionate about the Cloud is that the company I co-founded Cardea Insurance had its backend developped on AWS. Using the microservices that are available from AWS right out of the box and the ease of integrating new microservices or deploying your own microsesrvices lit a fire in me. I am now AWS Certified Cloud Practitioner and have a strong foundation of the AWS ecosystem, including services like <span className="text-white font-semibold">S3, EC2, Lambda, Dynamo</span> and other less frequently used microserives like <span className="text-white font-semibold">Cognito</span>. This knowledge allows me to design and implement scalable and secure solutions that meet the needs of modern enterprise sized businesses.
                 </div>
                 <div className="text-3xl text-white font-semibold mt-8">Education</div>
                 <Card
@@ -266,6 +275,15 @@ function Home() {
                   Link={card3.Link}
                 />
                 <div className="text-3xl text-white font-semibold mt-8">Projects</div>
+                
+                <ThumbnailCard
+                  ImageSrc={project7.ImageSrc}
+                  Title={project7.Title}
+                  Description={project7.Description}
+                  Skills={project7.Skills}
+                  Link={project7.Link}
+                />
+
                 <ThumbnailCard
                   ImageSrc={project5.ImageSrc}
                   Title={project5.Title}
@@ -291,27 +309,11 @@ function Home() {
                 />
 
                 <ThumbnailCard
-                  ImageSrc={project1.ImageSrc}
-                  Title={project1.Title}
-                  Description={project1.Description}
-                  Skills={project1.Skills}
-                  Link={project1.Link}
-                />
-
-                <ThumbnailCard
                   ImageSrc={project2.ImageSrc}
                   Title={project2.Title}
                   Description={project2.Description}
                   Skills={project2.Skills}
                   Link={project2.Link}
-                />
-
-                <ThumbnailCard
-                  ImageSrc={project3.ImageSrc}
-                  Title={project3.Title}
-                  Description={project3.Description}
-                  Skills={project3.Skills}
-                  Link={project3.Link}
                 />
 
                 <div className='text-center' style={{ marginBottom: '2rem' }}>
