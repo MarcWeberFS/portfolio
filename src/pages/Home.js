@@ -124,7 +124,7 @@ function Home() {
     Title: "Text to PostGIS - Bacherlor Thesis",
     Description: "A text to PostGIS converter that allows multiple feedback loops which improve the response of the AI. The performance of the AIs and the impact the feedback loops had on the performance were evaluated in self designed Benchmark. The benchmark contains 25 questions with varying difficulty. The a small app to interact with the LLMs and the results of the Benchmark are displayed on the website.",
     Skills: ['React', 'Spring Boot', 'PostGIS', 'Java', 'PostgreSQL', 'AI'],
-    Link: "https://text-to-postgis.com/"
+    Link: "https://github.com/MarcWeberFS/Text-to-sql" //https://text-to-postgis.com/
   };
 
   const jiggleAnimation = {
