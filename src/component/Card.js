@@ -9,7 +9,7 @@ export default function Card({ Date, Role, Description, Skills, Link }) {
   return (
     <a href={Link} className="block cursor-pointer">
       <motion.div
-        className="flex divide-gray-200 overflow-hidden px-4 py-4 rounded-lg bg-transparent"
+        className="flex flex-col lg:flex-row divide-gray-200 overflow-hidden px-4 py-4 rounded-lg bg-transparent"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         animate={{
@@ -17,7 +17,7 @@ export default function Card({ Date, Role, Description, Skills, Link }) {
         }}
         transition={{ duration: 0.3 }}
       >
-        <div className="lg:w-48 w-20 text-sm text-slate-400 italic pt-1">
+        <div className="lg:w-48 text-sm sm:ml-3 sm:mb-2 text-slate-400 italic pt-1">
           {Date}
         </div>
         <div className="w-full">
