@@ -66,7 +66,7 @@ function Home() {
   const card4 = {
     Date: "Jan 2025 - Present",
     Role: "Document Template Developer at Zurich Insurance",
-    Description: "Workingstudent at Zurich Insurance in the Enterprise Content Management team. Working on outbound topics such as creating documents, testing documents. Developped API microservices for the outbound platform using Java and Spring Boot to communicate securely. More recently working on the inbound document extraction team using TCG.",
+    Description: "Workingstudent at Zurich Insurance in the Enterprise Content Management team. Working on outbound topics such as creating documents, testing documents. Developped API microservices for the outbound platform using Java and Spring Boot to communicate securely. More recently working on the inbound document capturing team using TCG.",
     Skills: ['ISIS Papyrus', 'TCG', 'Spring-Boot', 'Java'],
     Link: "https://www.zurich.ch/"
   };
@@ -131,6 +131,10 @@ function Home() {
     whileHover: { rotate: [0, -10, 10, -10, 10, 0] },
     transition: { duration: 0.6, ease: "easeInOut" }
   };
+
+  const getCurrentYear = () => {
+    return new Date().getFullYear();
+  }
 
   return (
     <div className="App font-sans min-h-screen overflow-hidden">
@@ -317,7 +321,7 @@ function Home() {
                 />
 
                 <div className='text-center' style={{ marginBottom: '2rem' }}>
-                  © Marc Weber | 2025
+                  © Marc Weber | {getCurrentYear()}
                 </div>
               </div>
             </div>
