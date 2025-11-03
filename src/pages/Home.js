@@ -64,11 +64,19 @@ function Home() {
   };
 
   const card4 = {
-    Date: "Jan 2025 - Present",
+    Date: "Jan 2025 - Sep 2025",
     Role: "Document Template Developer at Zurich Insurance",
     Description: "Workingstudent at Zurich Insurance in the Enterprise Content Management team. Working on outbound topics such as creating documents, testing documents. Developped API microservices for the outbound platform using Java and Spring Boot to communicate securely. More recently working on the inbound document capturing team using TCG.",
     Skills: ['ISIS Papyrus', 'TCG', 'Spring-Boot', 'Java'],
     Link: "https://www.zurich.ch/"
+  };
+
+  const card5 = {
+    Date: "Nov 2025 - Present",
+    Role: "Solution Engineer at Mesoneer",
+    Description: "Solution Engineer developing workflows using Camunda, Flowable and Spring Boot. ",
+    Skills: ['Camunda', 'Spring-Boot', 'Java', 'Flowable'],
+    Link: "https://www.mesoneer.io/"
   };
 
   const project1 = {
@@ -250,6 +258,13 @@ function Home() {
                   Link={cardEducation.Link}
                 />
                 <div className="text-3xl text-white font-semibold mt-8">Work Experience</div>
+                <Card
+                  Date={card5.Date}
+                  Role={card5.Role}
+                  Description={card5.Description}
+                  Skills={card5.Skills}
+                  Link={card5.Link}>
+                </Card>
                 <Card
                   Date={card4.Date}
                   Role={card4.Role}
